@@ -16,6 +16,11 @@ function App() {
         </div>
         <div className="pad"></div>
       </div>
+      <div className="books">
+        <div className="pad">
+          <AddBook />
+        </div>
+      </div>
     </div>
   );
 }
