@@ -1,21 +1,21 @@
 import React from "react";
 import "./App.css";
+import { mainAuth } from "./components/auth";
+import BookList from "./components/bookList";
+import AddBook from "./components/addBook";
 
 function App() {
+  mainAuth();
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">Sprint Rest API</header>
+      <div className="books">
+        <div className="pad"></div>
+        <div className="booklist">
+          <BookList />
+        </div>
+        <div className="pad"></div>
+      </div>
     </div>
   );
 }
