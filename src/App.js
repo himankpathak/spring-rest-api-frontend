@@ -4,6 +4,7 @@ import { mainAuth } from "./components/auth";
 import BookList from "./components/bookList";
 import AddBook from "./components/addBook";
 import UpdateBook from "./components/updateBook";
+import DeleteBook from "./components/deleteBook";
 
 function App() {
   mainAuth();
@@ -13,6 +14,7 @@ function App() {
       <div className="books">
         <div className="pad"></div>
         <div className="booklist">
+          <h2>Book List:</h2>
           <BookList />
         </div>
         <div className="pad"></div>
@@ -23,6 +25,9 @@ function App() {
         </div>
         <div className="pad">
           <UpdateBook />
+        </div>
+        <div className="pad">
+          <DeleteBook />
         </div>
       </div>
     </div>
