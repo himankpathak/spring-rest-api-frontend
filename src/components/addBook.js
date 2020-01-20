@@ -24,6 +24,7 @@ export default function AddBook() {
     <div>
       <form onSubmit={() => addBook(bookName, author)}>
         Book Name:
+        <br />
         <input
           type="text"
           onChange={e => setBookName(e.target.value)}
@@ -31,6 +32,7 @@ export default function AddBook() {
         />
         <br />
         Author:
+        <br />
         <input type="text" onChange={e => setAuthor(e.target.value)} required />
         <br />
         <input type="submit" value="Add" />

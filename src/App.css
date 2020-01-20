@@ -16,11 +16,11 @@
 }
 
 .booklist {
-  flex: 4;
-  padding: 2vw;
+  flex: 6;
+  padding: 1vw;
 }
 
 .pad {
-  flex: 2;
+  flex: 5;
   margin: 2rem;
 }

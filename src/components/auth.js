@@ -21,7 +21,6 @@ const getBooks = async access_token => {
 };
 
 function mainAuth() {
-  console.log(localStorage.getItem("access_token"));
   if (localStorage.getItem("access_token") === null) {
     getToken();
   } else {

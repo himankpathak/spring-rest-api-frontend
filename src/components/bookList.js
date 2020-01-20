@@ -15,14 +15,14 @@ export default function BookList() {
   getBooks().then(res => setBooks(res));
 
   return (
-    <ul style={{ listStyleType: "none" }}>
+    <div>
       {books.map(element => {
         return (
-          <li key={element.id}>
+          <p key={element.id}>
             ({element.id}) {element.bookName} - {element.author}
-          </li>
+          </p>
         );
       })}
-    </ul>
+    </div>
   );
 }
