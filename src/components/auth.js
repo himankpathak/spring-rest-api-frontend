@@ -26,11 +26,9 @@ function mainAuth() {
     getToken();
   } else {
     let access_token = localStorage.getItem("access_token");
-    getBooks(access_token).then(res => {
-      if (res !== 200) {
-        getToken();
-      }
-    });
+    getBooks(access_token)
+      .then(res => console.log("valid token"))
+      .catch(res => getToken());
   }
 }
 
