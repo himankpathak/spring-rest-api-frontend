@@ -3,6 +3,7 @@ import "./App.css";
 import { mainAuth } from "./components/auth";
 import BookList from "./components/bookList";
 import AddBook from "./components/addBook";
+import UpdateBook from "./components/updateBook";
 
 function App() {
   mainAuth();
@@ -19,6 +20,9 @@ function App() {
       <div className="books">
         <div className="pad">
           <AddBook />
+        </div>
+        <div className="pad">
+          <UpdateBook />
         </div>
       </div>
     </div>
