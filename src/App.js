@@ -10,7 +10,7 @@ function App() {
   mainAuth();
   return (
     <div className="App">
-      <header className="App-header">Sprint Rest API</header>
+      <header className="App-header">Sprint Rest API Demo</header>
       <div className="books">
         <div className="pad"></div>
         <div className="booklist">
